@@ -95,7 +95,7 @@ public class Sign_UpPage_Validation extends BaseClass {
 		
 		
 		 WebElement fname = driver.findElement(By.xpath("//input[@name='firstName']"));
-		 fname.sendKeys("Akash");
+		 fname.sendKeys("Salim");
 		
 		driver.findElement(By.xpath("//input[@name='lastName']")).sendKeys("Mogal");
 		WebElement v_password = driver.findElement(By.xpath("(//input[@name='password'])[2]"));

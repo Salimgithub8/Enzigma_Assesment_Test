@@ -96,7 +96,7 @@ public class Forget_Pass_Validation extends BaseClass
 		//non-registered email
 		preCondition();
 		driver.findElement(By.linkText("Forgot Password?")).click();
-		driver.findElement(By.xpath("//div[@id='messageInputTag']/div/div/abx-email/input")).sendKeys("salim.mogal8888@gmail.com");
+		driver.findElement(By.xpath("//div[@id='messageInputTag']/div/div/abx-email/input")).sendKeys("salim.mogal1238@gmail.com");
 		driver.findElement(By.xpath("//div[@title='Proceed']")).click();
 		String email3 = driver.findElement(By.xpath("//div[@class='content-margin']")).getText();
 		if(email3.contains("User does not exists")) 
@@ -117,7 +117,7 @@ public class Forget_Pass_Validation extends BaseClass
 		//Invalid email format.
 		preCondition();
 		driver.findElement(By.linkText("Forgot Password?")).click();
-		driver.findElement(By.xpath("//div[@id='messageInputTag']/div/div/abx-email/input")).sendKeys("salim.mogal8888@gmail.com");
+		driver.findElement(By.xpath("//div[@id='messageInputTag']/div/div/abx-email/input")).sendKeys("salim.mogall.com");
 		driver.findElement(By.xpath("//div[@title='Proceed']")).click();
 		String invalid_email = driver.findElement(By.xpath("//div[@class='content-margin']")).getText();
 		if(invalid_email.contains("Invalid email format")) {
